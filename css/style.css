@@ -1,0 +1,96 @@
+/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+    font-size: 100%;
+    line-height: 1.6;
+    font-family: "Montserrat", serif;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul,
+ol {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    background-image: linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+.wrapper{
+    width: 500px;
+    position: relative;
+}
+.container{
+    width: 100%;
+    background-image: linear-gradient( 250.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% );
+    border-radius: 10px;
+    padding: 40px 50px;
+    box-shadow: 10px 10px 20px 0 #000000ab;
+    position: relative;
+    color: white;
+}
+.wrapper::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(100% + 40px);
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+.quote{
+    font-size: 20px;
+}
+.author{
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.button{
+    font-size: 20px;
+    background-color: antiquewhite;
+    font-weight: 700;
+    padding: 10px 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
